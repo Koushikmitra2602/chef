@@ -13,6 +13,9 @@ end
 
 template '/etc/motd' do
   source 'motd.erb'
+  variables(
+    :name => 'Koushik Mitra'
+  )
   owner 'root'
   group 'root'
   action :create
